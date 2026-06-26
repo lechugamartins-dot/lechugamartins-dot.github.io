@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fábio Lechuga Martins | Regularização Fundiária</title>
+  <meta name="description" content="Atuação em regularização fundiária, regularização de imóveis, usucapião e soluções jurídicas imobiliárias.">
+  <style>
+    :root {
+      --azul-escuro: #102a43;
+      --azul: #1d5f8e;
+      --dourado: #b98a35;
+      --verde-whatsapp: #25D366;
+      --verde-whatsapp-escuro: #1EAF56;
+      --fundo: #f7f8f7;
+      --texto: #263947;
+      --suave: #637281;
+      --linha: #dfe6e9;
+      --branco: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #edf1f3;
+      color: var(--texto);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+    .pagina {
+      width: min(100%, 780px);
+      min-height: 100vh;
+      margin: 0 auto;
+      overflow: hidden;
+      background: var(--branco);
+    }
+.apresentacao {
+      padding: 30px 22px 34px;
+      background:
+        radial-gradient(circle at 100% 0%, rgba(185,138,53,.19), transparent 35%),
+        linear-gradient(160deg, #fcfcfa, #f0f5f5);
+    }
+    .selo {
+      margin: 0 0 12px;
+      color: var(--dourado);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.15px;
+      text-transform: uppercase;
+    }
+    h1, h2 {
+      margin: 0;
+      color: var(--azul-escuro);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    h1 {
+      max-width: 620px;
+      font-size: clamp(35px, 9vw, 58px);
+      line-height: 1.06;
+      letter-spacing: -1.2px;
+    }
+    .foto {
+      position: relative;
+      margin: 23px 0 20px;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      border: 1px solid #d4dee2;
+      border-radius: 18px;
+      background: #dfe8ea;
+      box-shadow: 0 14px 30px rgba(16,42,67,.14);
+    }
+    .foto img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .foto::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 32%;
+      content: "";
+      background: linear-gradient(transparent, rgba(10,31,47,.56));
+      pointer-events: none;
+    }
+    .legenda-foto {
+      position: absolute;
+      z-index: 1;
+      right: 16px;
+      bottom: 14px;
+      left: 16px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      text-shadow: 0 1px 3px rgba(0,0,0,.34);
+    }
+    .descricao {
+      max-width: 610px;
+      margin: 0 0 20px;
+      color: #344957;
+      font-size: 17px;
+      line-height: 1.56;
+    }
+    .botao-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 52px;
+      padding: 14px 21px;
+      border-radius: 10px;
+      background: var(--verde-whatsapp);
+      color: #12331f;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(37,211,102,.22);
+      transition: transform .15s ease, background .15s ease;
+    }
+    .botao-whatsapp:hover { background: var(--verde-whatsapp-escuro); }
+    .botao-whatsapp:active { transform: scale(.98); }
+    .botao-whatsapp .icone-whatsapp {
+      width: 19px;
+      height: 19px;
+    }
+    .secao { padding: 38px 22px; }
+    .secao-clara {
+      border-top: 1px solid #edf1f2;
+      border-bottom: 1px solid #edf1f2;
+      background: var(--fundo);
+    }
+    h2 {
+      margin-bottom: 9px;
+      font-size: 29px;
+      line-height: 1.16;
+    }
+    .introducao {
+      margin: 0 0 21px;
+      color: var(--suave);
+      font-size: 16px;
+    }
+    .servicos {
+      display: grid;
+      gap: 13px;
+    }
+    .servico {
+      display: block;
+      padding: 18px;
+      border: 1px solid var(--linha);
+      border-radius: 13px;
+      background: #fff;
+      color: inherit;
+      text-decoration: none;
+    }
+    a.servico {
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    a.servico:hover {
+      transform: translateY(-2px);
+      border-color: #bfd2dc;
+    }
+    .numero {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 12px;
+      place-items: center;
+      border-radius: 50%;
+      background: #eaf2f7;
+      color: var(--azul);
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .servico h3 {
+      margin: 0 0 6px;
+      color: var(--azul-escuro);
+      font-size: 18px;
+    }
+    .servico p {
+      margin: 0;
+      color: var(--suave);
+      font-size: 15px;
+    }
+    .seta {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--azul);
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .destaque {
+      margin: 0;
+      padding-left: 16px;
+      border-left: 3px solid var(--dourado);
+      color: #334856;
+      font-size: 17px;
+      line-height: 1.62;
+    }
+    .artigos {
+      background: #fffdf8;
+    }
+    .bloco-artigo {
+      display: grid;
+      gap: 12px;
+      margin-top: 19px;
+    }
+    .artigo-destaque {
+      display: block;
+      padding: 20px;
+      border: 1px solid #eadfc8;
+      border-radius: 14px;
+      background: #fff;
+      color: inherit;
+      text-decoration: none;
+    }
+    .artigo-destaque .rotulo {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--dourado);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .9px;
+      text-transform: uppercase;
+    }
+    .artigo-destaque h3 {
+      margin: 0 0 7px;
+      color: var(--azul-escuro);
+      font-size: 19px;
+    }
+    .artigo-destaque p {
+      margin: 0;
+      color: var(--suave);
+      font-size: 15px;
+    }
+    .contato {
+      padding: 40px 22px 86px;
+      background: var(--azul-escuro);
+      color: #fff;
+      text-align: center;
+    }
+    .contato h2 { color: #fff; }
+    .contato p {
+      max-width: 520px;
+      margin: 10px auto 20px;
+      color: #d6e0e7;
+    }
+    .credenciais {
+      margin-top: 22px;
+      color: #cbd7df;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .whatsapp-flutuante {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 4;
+      display: grid;
+      width: 58px;
+      height: 58px;
+      place-items: center;
+      border: 0;
+      border-radius: 50%;
+      background: var(--verde-whatsapp);
+      color: #12331f;
+      text-decoration: none;
+      box-shadow: 0 9px 22px rgba(0,0,0,.25);
+      transition: transform .15s ease, background .15s ease;
+    }
+    .whatsapp-flutuante:hover { background: var(--verde-whatsapp-escuro); }
+    .whatsapp-flutuante:active { transform: scale(.95); }
+    .whatsapp-flutuante .icone-whatsapp {
+      width: 31px;
+      height: 31px;
+    }
+    @media (min-width:640px) {
+      body { padding: 28px; }
+      .pagina {
+        border-radius: 18px;
+        box-shadow: 0 14px 40px rgba(16,42,67,.12);
+      }
+.apresentacao { padding: 48px; }
+      .secao { padding: 50px 48px; }
+      .servicos { grid-template-columns: repeat(2,1fr); }
+      .contato { padding: 50px 48px 72px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="pagina">
+<section class="apresentacao">
+      <p class="selo">Regularização fundiária</p>
+      <h1>Regularização de imóveis com segurança jurídica.</h1>
+
+      <div class="foto">
+        <img src="foto-perfil.jpg" alt="Fábio Lechuga Martins em ambiente profissional">
+        <div class="legenda-foto">Fábio Lechuga Martins</div>
+      </div>
+
+      <p class="descricao">Atuação voltada à regularização de imóveis urbanos e rurais, com orientação clara para transformar pendências em propriedade regularizada.</p>
+      <a class="botao-whatsapp" href="https://wa.me/5577981182364?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20regulariza%C3%A7%C3%A3o%20de%20im%C3%B3vel." target="_blank" rel="noopener">
+        <svg class="icone-whatsapp" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <path fill="currentColor" d="M16 3.1a12.5 12.5 0 0 0-10.7 19L3.6 28.5l6.6-1.7A12.5 12.5 0 1 0 16 3.1Zm0 22.7c-2 0-3.9-.6-5.6-1.7l-.4-.2-3.9 1 1.1-3.8-.3-.4a9.6 9.6 0 1 1 9.1 5.1Zm5.3-7.2c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.9-.9-3.1-1.6-4.3-3.6-.3-.5.3-.5.9-1.6.1-.2.1-.5 0-.7-.1-.2-.8-1.8-1.1-2.4-.3-.6-.6-.5-.8-.5h-.7c-.3 0-.7.1-1 .5-1.1 1.1-1.2 2.9-.2 4.7 1.4 2.6 3.5 4.8 6.5 6 1 .4 1.8.7 2.5.8 1 .2 1.9.1 2.6-.1.8-.2 2-1 2.2-1.9.3-.9.3-1.7.2-1.9-.1-.2-.3-.3-.6-.5Z"/>
+</svg>
+        Falar pelo WhatsApp
+      </a>
+    </section>
+
+    <section id="atuacao" class="secao secao-clara">
+      <h2>Como posso ajudar</h2>
+      <p class="introducao">Soluções jurídicas para viabilizar segurança, registro e valorização patrimonial.</p>
+
+      <div class="servicos">
+        <article class="servico">
+          <div class="numero">01</div>
+          <h3>Regularização de imóveis</h3>
+          <p>Análise da situação do imóvel e definição do caminho jurídico e documental mais adequado.</p>
+        </article>
+        <article class="servico">
+          <div class="numero">02</div>
+          <h3>Usucapião</h3>
+          <p>Atuação judicial e extrajudicial para reconhecimento da propriedade pela posse.</p>
+        </article>
+        <article class="servico">
+          <div class="numero">03</div>
+          <h3>Regularização fundiária</h3>
+          <p>Soluções para imóveis urbanos, rurais, loteamentos e núcleos consolidados.</p>
+        </article>
+        <article class="servico">
+          <div class="numero">04</div>
+          <h3>Inventários e imóveis</h3>
+          <p>Organização da transmissão de bens e das etapas registrais necessárias.</p>
+        </article>
+        <a class="servico" href="artigos.html" aria-label="Abrir artigos técnicos">
+          <div class="numero">05</div>
+          <h3>Artigos técnicos</h3>
+          <p>Análises objetivas sobre regularização fundiária, Direito Imobiliário, atividade notarial e registral.</p>
+          <span class="seta">Ver publicações →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Atuação próxima e objetiva</h2>
+      <p class="destaque">Cada imóvel tem sua própria história documental. O trabalho começa com uma leitura cuidadosa do caso, segue com orientação prática e busca uma solução juridicamente segura para a regularização.</p>
+    </section>
+
+    
+<section id="artigos" class="secao artigos">
+  <h2>Artigos técnicos</h2>
+  <p class="introducao">Publicações sobre Direito Imobiliário, regularização fundiária, atividade notarial e registral e responsabilidade disciplinar.</p>
+  <div class="bloco-artigo">
+    <a class="artigo-destaque" href="artigo-1.html">
+      <span class="rotulo">Responsabilidade disciplinar · Artigo 1</span>
+      <h3>O artigo 236 da Constituição Federal e o regime jurídico da atividade notarial e registral</h3>
+      <p>Uma leitura da atividade exercida em caráter privado por delegação do Poder Público e dos limites constitucionais à fiscalização e à responsabilização.</p>
+      <span class="seta">Ler artigo →</span>
+    </a>
+    <a class="artigo-destaque" href="artigo-2.html">
+      <span class="rotulo">Responsabilidade disciplinar · Artigo 2</span>
+      <h3>A delegação notarial e registral é pessoal: pessoas naturais, concurso público e interinidade</h3>
+      <p>Reflexões sobre a investidura individual do delegatário, o sentido jurídico de “cartório” e o caráter excepcional da interinidade.</p>
+      <span class="seta">Ler artigo →</span>
+    </a>
+    <a class="artigo-destaque" href="artigos.html">
+      <span class="rotulo">Arquivo de publicações</span>
+      <h3>Ver todos os artigos técnicos</h3>
+      <p>Acesse a página que reunirá os textos publicados e as próximas séries de estudos.</p>
+      <span class="seta">Abrir publicações →</span>
+    </a>
+  </div>
+</section>
+
+<section id="contato" class="contato">
+      <h2>Vamos conversar sobre o seu imóvel?</h2>
+      <p>Envie uma mensagem para uma avaliação inicial da situação documental e jurídica do imóvel.</p>
+      <a class="botao-whatsapp" href="https://wa.me/5577981182364?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20regulariza%C3%A7%C3%A3o%20de%20im%C3%B3vel." target="_blank" rel="noopener">
+        <svg class="icone-whatsapp" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <path fill="currentColor" d="M16 3.1a12.5 12.5 0 0 0-10.7 19L3.6 28.5l6.6-1.7A12.5 12.5 0 1 0 16 3.1Zm0 22.7c-2 0-3.9-.6-5.6-1.7l-.4-.2-3.9 1 1.1-3.8-.3-.4a9.6 9.6 0 1 1 9.1 5.1Zm5.3-7.2c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.9-.9-3.1-1.6-4.3-3.6-.3-.5.3-.5.9-1.6.1-.2.1-.5 0-.7-.1-.2-.8-1.8-1.1-2.4-.3-.6-.6-.5-.8-.5h-.7c-.3 0-.7.1-1 .5-1.1 1.1-1.2 2.9-.2 4.7 1.4 2.6 3.5 4.8 6.5 6 1 .4 1.8.7 2.5.8 1 .2 1.9.1 2.6-.1.8-.2 2-1 2.2-1.9.3-.9.3-1.7.2-1.9-.1-.2-.3-.3-.6-.5Z"/>
+</svg>
+        Iniciar conversa
+      </a>
+      <div class="credenciais">
+        Fábio Lechuga Martins · Advogado · OAB/MS nº 11.538<br>
+        Campo Grande/MS e Santana/BA
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-flutuante" href="https://wa.me/5577981182364?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20regulariza%C3%A7%C3%A3o%20de%20im%C3%B3vel." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <svg class="icone-whatsapp" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <path fill="currentColor" d="M16 3.1a12.5 12.5 0 0 0-10.7 19L3.6 28.5l6.6-1.7A12.5 12.5 0 1 0 16 3.1Zm0 22.7c-2 0-3.9-.6-5.6-1.7l-.4-.2-3.9 1 1.1-3.8-.3-.4a9.6 9.6 0 1 1 9.1 5.1Zm5.3-7.2c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.9-.9-3.1-1.6-4.3-3.6-.3-.5.3-.5.9-1.6.1-.2.1-.5 0-.7-.1-.2-.8-1.8-1.1-2.4-.3-.6-.6-.5-.8-.5h-.7c-.3 0-.7.1-1 .5-1.1 1.1-1.2 2.9-.2 4.7 1.4 2.6 3.5 4.8 6.5 6 1 .4 1.8.7 2.5.8 1 .2 1.9.1 2.6-.1.8-.2 2-1 2.2-1.9.3-.9.3-1.7.2-1.9-.1-.2-.3-.3-.6-.5Z"/>
+</svg>
+  </a>
+</body>
+</html>
